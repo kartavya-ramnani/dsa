@@ -1,0 +1,6 @@
+# Project exclude paths
+/out/
+/dsa.iml
+.DS_Store
+*.xml
+dsa/

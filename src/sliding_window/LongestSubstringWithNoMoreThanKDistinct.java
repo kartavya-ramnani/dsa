@@ -2,7 +2,7 @@ package sliding_window;
 
 import java.util.HashSet;
 
-// Given a string, find the length of the longest substring in it with no more than K distin
+// Given a string, find the length of the longest substring in it with no more than K distinct characters
 public class LongestSubstringWithNoMoreThanKDistinct {
 
     public static int calculateLongest(String input, int k) {
