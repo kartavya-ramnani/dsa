@@ -30,7 +30,7 @@ public class LongestSubstringWithNoMoreThanKDistinct {
         return maxSize;
     }
 
-    public static void main(String args[]) {
+    public static void main(String[] args) {
         String input = "araaci";
         int k = 2;
         int response = LongestSubstringWithNoMoreThanKDistinct.calculateLongest(input, k);

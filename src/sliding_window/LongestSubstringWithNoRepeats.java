@@ -25,7 +25,7 @@ public class LongestSubstringWithNoRepeats {
         return maxLength;
     }
 
-    public static void main(String args[]) {
+    public static void main(String[] args) {
         String input = "ABDEFGABEF";
         int response = LongestSubstringWithNoRepeats.calculateMax(input);
         System.out.println("response : " + response);

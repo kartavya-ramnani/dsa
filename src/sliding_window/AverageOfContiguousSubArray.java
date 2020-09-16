@@ -41,7 +41,7 @@ public class AverageOfContiguousSubArray {
         return averageList;
     }
 
-    public static void main(String args[]) {
+    public static void main(String[] args) {
         // Running Average Contiguous
         ArrayList<Double> input = new ArrayList<Double>(Arrays.asList(1.0, 3.0, 2.0, 6.0, -1.0, 4.0, 1.0, 8.0, 2.0));
         ArrayList<Double> response = AverageOfContiguousSubArray.calculateAverage(input, 5);

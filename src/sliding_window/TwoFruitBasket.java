@@ -48,7 +48,7 @@ public class TwoFruitBasket {
 
     }
 
-    public static void main(String args[]) {
+    public static void main(String[] args) {
         ArrayList<Character> input = new ArrayList<>(Arrays.asList('A', 'B', 'C', 'A', 'C'));
         int response = TwoFruitBasket.calculateMaximum(input);
         System.out.println("response : " + response);

@@ -38,7 +38,7 @@ public class LongestSubstringWithSameLettersAfterReplacement {
         return  maxLength;
     }
 
-    public static void main(String args[]) {
+    public static void main(String[] args) {
         String input = "aabccbb";
         int k = 2;
         int response = LongestSubstringWithSameLettersAfterReplacement.calculateLongest(input, k);
