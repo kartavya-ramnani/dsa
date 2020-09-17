@@ -77,6 +77,25 @@ public class LinkedListCycle {
         return cycleLength;
     }
 
+    public static ListNode startingNode(ListNode head) {
+        int len = cycleLength(head);
+        if (len == 0) {
+            return head;
+        }
+        ListNode start = head;
+        ListNode fast = head;
+        for (int i = 0; i < len; i++) {
+            fast = fast.next;
+        }
+
+        while (start != fast) {
+            start = start.next;
+            fast = fast.next;
+        }
+
+        return start;
+    }
+
     public static void main(String[] args) {
         ListNode head = new ListNode(1);
         head.next = new ListNode(2);
@@ -84,13 +103,13 @@ public class LinkedListCycle {
         head.next.next.next = new ListNode(4);
         head.next.next.next.next = new ListNode(5);
         head.next.next.next.next.next = new ListNode(6);
-        System.out.println("Has Cycle : " + LinkedListCycle.doesLoopExist(head) + " with the length : " + LinkedListCycle.cycleLength(head));
+        System.out.println("Has Cycle : " + LinkedListCycle.doesLoopExist(head) + " with the length : " + LinkedListCycle.cycleLength(head) + " starting at : " + LinkedListCycle.startingNode(head).value);
 
         head.next.next.next.next.next.next = head.next.next;
-        System.out.println("Has Cycle : " + LinkedListCycle.doesLoopExist(head) + " with the length : " + LinkedListCycle.cycleLength(head));
+        System.out.println("Has Cycle : " + LinkedListCycle.doesLoopExist(head) + " with the length : " + LinkedListCycle.cycleLength(head) + " starting at : " + LinkedListCycle.startingNode(head).value);
 
         head.next.next.next.next.next.next = head.next.next.next;
-        System.out.println("Has Cycle : " + LinkedListCycle.doesLoopExist(head) + " with the length : " + LinkedListCycle.cycleLength(head));
+        System.out.println("Has Cycle : " + LinkedListCycle.doesLoopExist(head) + " with the length : " + LinkedListCycle.cycleLength(head) + " starting at : " + LinkedListCycle.startingNode(head).value);
 
     }
 }
