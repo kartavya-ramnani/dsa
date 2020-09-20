@@ -9,4 +9,7 @@ I try to solve DSA problems on a daily basis and push them here.
 
 Questions list present inside each pattern directory. 
 
+Currently, the solutions are written in Java. 
+Future plan is providing the same solutions in Go. 
+
 Please feel free to raise issues if any solution is not optimal.
