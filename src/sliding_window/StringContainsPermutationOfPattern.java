@@ -1,7 +1,6 @@
 package sliding_window;
 
 import java.util.HashMap;
-import java.util.HashSet;
 
 // Given a string and a pattern, find out if the string contains any permutation of the pattern.
 // This can also be used to find all the permutation in the string.
