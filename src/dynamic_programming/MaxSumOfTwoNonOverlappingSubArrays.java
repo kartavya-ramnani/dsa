@@ -42,7 +42,7 @@ public class MaxSumOfTwoNonOverlappingSubArrays {
 
         int lMax = input.get(l - 1);
         int mMax = input.get(m - 1);
-        int result = input.get(input.size() - l - m - 1);
+        int result = input.get(l + m - 1);
 
         for (int i = l + m; i < input.size(); i++) {
             lMax = Integer.max(lMax, input.get(i - m) - input.get(i - m - l));
