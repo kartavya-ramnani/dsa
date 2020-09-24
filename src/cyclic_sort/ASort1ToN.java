@@ -5,7 +5,7 @@ import java.util.Arrays;
 
 // Write a function to sort the objects in-place on their creation sequence number in O(n)O(n) and without any extra space.
 
-public class Sort1ToN {
+public class ASort1ToN {
 
     public static ArrayList<Integer> sort(ArrayList<Integer> input) {
         int i = 0;
@@ -23,8 +23,8 @@ public class Sort1ToN {
     }
 
     public static void main(String[] args) {
-        System.out.println("Response  : " + Sort1ToN.sort(new ArrayList<>(Arrays.asList(3, 1, 5, 4, 2))));
-        System.out.println("Response  : " + Sort1ToN.sort(new ArrayList<>(Arrays.asList(1, 5, 6, 3, 4, 2))));
-        System.out.println("Response  : " + Sort1ToN.sort(new ArrayList<>(Arrays.asList(2, 6, 4, 3, 1, 5))));
+        System.out.println("Response  : " + ASort1ToN.sort(new ArrayList<>(Arrays.asList(3, 1, 5, 4, 2))));
+        System.out.println("Response  : " + ASort1ToN.sort(new ArrayList<>(Arrays.asList(1, 5, 6, 3, 4, 2))));
+        System.out.println("Response  : " + ASort1ToN.sort(new ArrayList<>(Arrays.asList(2, 6, 4, 3, 1, 5))));
     }
 }
