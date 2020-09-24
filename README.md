@@ -6,6 +6,9 @@ I try to solve DSA problems on a daily basis and push them here.
 1. Sliding Window 
 1. Two - Pointers and Fast-Slow Pointers 
 1. Intervals
+1. Dynamic Programming
+1. Binary Trees
+1. Array Misc
 
 Questions list present inside each pattern directory. 
 
