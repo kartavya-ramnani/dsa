@@ -1,4 +1,4 @@
-##Cyclic Sort Pattern
+## Cyclic Sort Pattern
 
 -  ### Easy
    1. Write a function to sort the objects in-place on their creation sequence number in O(n)O(n) and without any extra space.
