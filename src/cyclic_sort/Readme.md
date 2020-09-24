@@ -1,7 +1,7 @@
 ## Cyclic Sort Pattern
 
 -  ### Easy
-   1. Write a function to sort the objects in-place on their creation sequence number in O(n)O(n) and without any extra space.
+   1. Write a function to sort the objects in-place on their creation sequence number in linear time and without any extra space.
    
    1. We are given an array containing ‘n’ distinct numbers taken from the range 0 to ‘n’.
    Since the array has only ‘n’ numbers out of the total ‘n+1’ numbers, find the missing number.
