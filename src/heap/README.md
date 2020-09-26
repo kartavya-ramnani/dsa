@@ -1,6 +1,6 @@
 ## Heap
 
-1. Design a class to calculate the median of a number stream. The class should have the following two methods:
+1. [Design a class to calculate the median of a number stream. The class should have the following two methods:](AFindMedianInNumberStream.java)
 
    insertNum(int num): stores the number in the class
    
