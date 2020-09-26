@@ -12,6 +12,7 @@ I try to solve DSA problems on a daily basis and push them here.
 1. [Cyclic Sort](src/cyclic_sort)
 1. [Linkedlist](src/linked_list)
 1. [Heap](src/heap)
+1. [Subset, Permutations and Combination](src/subset)
 
 Questions list present inside each pattern directory. 
 
