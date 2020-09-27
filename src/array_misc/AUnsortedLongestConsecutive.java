@@ -6,7 +6,7 @@ import java.util.HashSet;
 
 // Given an unsorted array, find the length of longest subarray of consecutive numbers
 // O(n) and O(n) space.
-public class UnsortedLongestConsecutive {
+public class AUnsortedLongestConsecutive {
 
     public static int longestConsecutiveSubArray(ArrayList<Integer> input) {
         int longestSubArray = 0;
@@ -34,7 +34,7 @@ public class UnsortedLongestConsecutive {
     }
 
     public static void main(String[] args) {
-        System.out.println("Response : " + UnsortedLongestConsecutive.longestConsecutiveSubArray(new ArrayList<>(Arrays.asList(100, 4, 200, 1, 3, 2))));
+        System.out.println("Response : " + AUnsortedLongestConsecutive.longestConsecutiveSubArray(new ArrayList<>(Arrays.asList(100, 4, 200, 1, 3, 2))));
     }
 
 }
