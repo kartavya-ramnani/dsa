@@ -1,5 +1,6 @@
 package sliding_window;
 
+import java.util.HashMap;
 import java.util.HashSet;
 
 // Given a string, find the length of the longest substring in it with no more than K distinct characters
@@ -12,13 +13,16 @@ public class LongestSubstringWithNoMoreThanKDistinct {
         }
 
         int maxSize = 0, firstSize = 0, windowStart = 0;
-        HashSet<Character> charSet = new HashSet<>();
+        HashMap<Character, Integer> charSet = new HashMap<>();
 
         for (int windowEnd = 0; windowEnd < input.length(); windowEnd++) {
-            charSet.add(input.charAt(windowEnd));
+            charSet.put(input.charAt(windowEnd), charSet.getOrDefault(input.charAt(windowEnd), 0) + 1);
             firstSize++;
             while (charSet.size() > k) {
-                charSet.remove(input.charAt(windowStart));
+                charSet.put(input.charAt(windowStart), charSet.get(input.charAt(windowStart)) - 1);
+                if (charSet.get(input.charAt(windowStart)) == 0) {
+                    charSet.remove(input.charAt(windowStart));
+                }
                 windowStart++;
                 firstSize--;
             }
