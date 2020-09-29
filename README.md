@@ -13,10 +13,14 @@ I try to solve DSA problems on a daily basis and push them here.
 1. [Linkedlist](src/linked_list)
 1. [Heap](src/heap)
 1. [Subset, Permutations and Combination](src/subset)
+1. [Mathematical](src/mathematical)
 
 Questions list present inside each pattern directory. 
 
-Currently, the solutions are written in Java. 
-Future plan is providing the same solutions in Go. 
+The solutions here are written in Java.
+
+But, Go deserves to be recognized for the go-to language for DSA as well. 
+
+Find the same solutions in [Go here](https://github.com/kartavya-ramnani/datastructures-algorithms-go). 
 
 Please feel free to raise issues if any solution is not optimal.

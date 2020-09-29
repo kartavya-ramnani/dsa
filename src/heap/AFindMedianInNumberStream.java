@@ -19,7 +19,7 @@ public class AFindMedianInNumberStream {
     }
 
     public void insertNum(int num) {
-        if (maxHeap.isEmpty() || maxHeap.peek() > num) {
+        if (maxHeap.isEmpty() || maxHeap.peek() >= num) {
             maxHeap.add(num);
         } else {
             minHeap.add(num);
