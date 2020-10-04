@@ -29,20 +29,14 @@ public class FGeneralizedAbbreviations {
             return answer;
         }
 
-        HashMap<Character, Integer> frequencyMap = new HashMap<>();
-        for (int i = 0; i < input.length(); i++) {
-            frequencyMap.put(input.charAt(i), frequencyMap.getOrDefault(input.charAt(i), 0) + 1);
-        }
-
         answer.add(input);
 
         for (int i = 0; i < input.length(); i++) {
-            Character inputChar = input.charAt(i);
             int newLength = answer.size();
 
             for (int j = 0; j < newLength; j++) {
                 StringBuilder newString = new StringBuilder(answer.get(j));
-                newString.replace(i, i + 1, "-".repeat(frequencyMap.get(inputChar)));
+                newString.replace(i, i + 1, "-");
                 answer.add(newString.toString());
             }
         }
@@ -61,7 +55,7 @@ public class FGeneralizedAbbreviations {
                     newString.replace(i, k, Integer.toString(sum));
                     toCheck = newString.toString();
                     answer.set(j, toCheck);
-                    i = k - 1;
+                    i = k - sum;
                 }
             }
         }
@@ -72,6 +66,8 @@ public class FGeneralizedAbbreviations {
     public static void main(String[] args) {
         System.out.println("Gen Ab : " + FGeneralizedAbbreviations.generalize("BAT"));
         System.out.println("Gen Ab : " + FGeneralizedAbbreviations.generalize("CODE"));
+        System.out.println("Gen Ab : " + FGeneralizedAbbreviations.generalize("BOOK"));
+        System.out.println("Gen Ab : " + FGeneralizedAbbreviations.generalize("TODAY"));
     }
 
 }
