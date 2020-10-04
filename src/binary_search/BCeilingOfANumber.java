@@ -18,7 +18,8 @@ public class BCeilingOfANumber {
         int ceilingIndex = end;
 
         while (start <= end) {
-            int middle = (start + end) / 2;
+            // Doing int mid = (lo + hi) / 2; is prone to overflow. Instead int mid = lo + (hi - lo) / 2
+            int middle = start + (end - start) / 2;
             if (input.get(middle) == key) {
                 ceilingIndex = middle;
                 break;
