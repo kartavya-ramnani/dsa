@@ -1,4 +1,4 @@
-## Subset, Permutations and Combinations Pattern
+## Subset, Permutations and Combinations Patterns
 
 1. [Given a set with distinct elements, find all of its distinct subsets.](AFindAllSubsets.java)
 

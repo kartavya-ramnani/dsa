@@ -8,6 +8,8 @@ import java.util.Arrays;
 // You should assume that the array can have duplicates.
 //
 //Write a function to return the index of the ‘key’ if it is present in the array, otherwise return -1.
+
+// Example : [1, 3, 5, 8, 10, 21, 25]
 public class AOrderAgnosticSearch {
 
     // Approach : Checking if
